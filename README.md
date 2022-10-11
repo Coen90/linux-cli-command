@@ -16,7 +16,7 @@
 ```
 
 
-### alias command(잘 )
+### alias command(잘 안됨, 알아보자)
 ``` linux
 # vim ~/.bashrc
 ```
