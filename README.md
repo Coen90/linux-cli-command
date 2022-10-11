@@ -25,3 +25,41 @@ add below on .bashrc
 alias running_services='systemctl list-units  --type=service  --state=running'
 ```
 then you can use running_services command
+
+
+
+### Need to organize command below
+- linux version
+```
+# cat /etc/redhat-release
+```
+- make directory
+```
+# mkdir [파일명]
+```
+- make user
+```centos
+# mkdir /app
+# groupadd app
+# useradd -g app -d /app/docker docker
+# passwd docker
+# su - docker  (사용자 변경)
+# id (확인)
+# exit (logout)
+```
+- add user authentication(on root account)
+```
+# chmod u+w /etc/sudoers
+# vi /etc/sudoers
+```
+```vim
+##Allow root to run any commands anywhere
+root    ALL=(ALL)       ALL
+docker  ALL=(ALL)       ALL (add this line)
+docker  ALL=(ALL)       NOPASSWD: ALL (if you don't want to lock)
+```
+```centos
+
+```
+
+
