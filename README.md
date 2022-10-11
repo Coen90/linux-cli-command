@@ -58,8 +58,5 @@ root    ALL=(ALL)       ALL
 docker  ALL=(ALL)       ALL (add this line)
 docker  ALL=(ALL)       NOPASSWD: ALL (if you don't want to lock)
 ```
-```centos
-
-```
 
 
